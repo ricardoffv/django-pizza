@@ -1,6 +1,7 @@
 pedidos = []
 
-#None = falso
+
+# None = falso
 def addpedido(nome, sabor, observacao=None):
     pedido = {}
     pedido['nome'] = nome
@@ -13,7 +14,7 @@ pedidos.append(addpedido('marco', 'portuguesa', 'dobro de cebola'))
 
 for pedido in pedidos:
     template = 'Nome: {nome}\nSabor {sabor}'
-    print(template.format(**pedido)) #expansao do dicionario para a quantidade correta dos argumentos
+    print(template.format(**pedido)) # expansao do dicionario pra qtd correta dos args
     if pedido['observacao']:
         print('Observacao: {}'.format(pedido['observacao']))
     print("-"*20)
